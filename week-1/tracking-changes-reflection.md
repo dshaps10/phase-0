@@ -4,13 +4,19 @@ Tracking and adding changes makes the lives of developers easier because it allo
 
 Git Changes Cheat Sheet:
 
-*Step 1: "git add [filename]" (you can also use "." in place of the file name to add all untracked files to the staging area)
-*Step 2: "git commit -m [commit message]" (This will commit your changes - you can also use "-v" and add a commit message in a text editor)
-*Step 3: "git pull origin master" (This will update your local repo and ensure that you have the most up-to-date master branch)
-*Step 4: "git push origin [branch name]" (this will push your local branch to your online repo on GitHub)
-*Step 5: Initiate a pull request on GitHub and then either merge your code yourself or wait for another developer
-*Step 6: delete your branch on GitHub
-*Step 7: "git pull origin master" (This will once again update your local repo with the added changes)
+Step 1: "git add [filename]" (you can also use "." in place of the file name to add all untracked files to the staging area)
+
+Step 2: "git commit -m [commit message]" (This will commit your changes - you can also use "-v" and add a commit message in a text editor)
+
+Step 3: "git pull origin master" (This will update your local repo and ensure that you have the most up-to-date master branch)
+
+Step 4: "git push origin [branch name]" (this will push your local branch to your online repo on GitHub)
+
+Step 5: Initiate a pull request on GitHub and then either merge your code yourself or wait for another developer
+
+Step 6: delete your branch on GitHub
+
+Step 7: "git pull origin master" (This will once again update your local repo with the added changes)
 
 *Check "git status" throughout this process
 
