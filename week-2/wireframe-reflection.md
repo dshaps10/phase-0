@@ -1,8 +1,8 @@
 #Index Wireframe
-<img src="/Users/Owner1/Desktop/phase-0/phase-0/week-2/imgs/wireframe-index.jpg">
+<img src="/imgs/wireframe-index.jpg">
 
 #Blog Wireframe
-<img src="~/Users/Owner1/Desktop/phase-0/phase-0/week-2/imgs/wireframe-blog-index.jpg">
+<img src="~/imgs/wireframe-blog-index.jpg">
 
 ##What is a wireframe?
 
