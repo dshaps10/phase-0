@@ -1,5 +1,9 @@
 #Index Wireframe
+<<<<<<< HEAD
 <img src="/imgs/wireframe-index.jpg">
+=======
+<img src="~/imgs/wireframe-index.jpg">
+>>>>>>> 776127febcd9b9fd1e6a6971cca620e941019649
 
 #Blog Wireframe
 <img src="~/imgs/wireframe-blog-index.jpg">
