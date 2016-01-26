@@ -1,7 +1,7 @@
 
 #Design Reflection
 
-<img src="/Users/Owner1/Desktop/phase-0/phase-0/week-2/imgs/site-map.png">
+<img src="/Users/Owner1/Desktop/phase-0/phase-0/week-2/imgs/site-map.PNG">
 
 ##What are the 6 Phases of Web Design?
 
