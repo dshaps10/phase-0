@@ -1,9 +1,7 @@
 
 #Design Reflection
 
-<img src="/Users/Owner1/Desktop/phase-0/phase-0/week-2/imgs/site-map.PNG">
-
-![Alt text](/Users/Owner1/Desktop/phase-0/phase-0/week-2/imgs/site-map.PNG)
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-2/imgs/site-map.png">
 
 ##What are the 6 Phases of Web Design?
 
