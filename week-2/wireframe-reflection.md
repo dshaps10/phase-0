@@ -1,16 +1,8 @@
 #Index Wireframe
-<<<<<<< HEAD
-<<<<<<< HEAD
-<img src="/imgs/wireframe-index.jpg">
-=======
-<img src="~/imgs/wireframe-index.jpg">
->>>>>>> 776127febcd9b9fd1e6a6971cca620e941019649
-=======
-<img src="~/imgs/wireframe-index.jpg">
->>>>>>> 776127febcd9b9fd1e6a6971cca620e941019649
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-2/imgs/wireframe-index.jpg">
 
 #Blog Wireframe
-<img src="~/imgs/wireframe-blog-index.jpg">
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-2/imgs/wireframe-blog-index.jpg">
 
 ##What is a wireframe?
 
