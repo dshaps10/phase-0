@@ -1,5 +1,5 @@
 #Index Wireframe
-<img src="https://github.com/dshaps10/phase-0/blob/master/week-2/imgs/wireframe-index.jpg">
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-2/imgs/wireframe-index2.jpg?raw=true">
 
 #Blog Wireframe
 <img src="https://github.com/dshaps10/phase-0/blob/master/week-2/imgs/wireframe-blog-index.jpg">
