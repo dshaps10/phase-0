@@ -1,3 +1,85 @@
 html {
-  background-color: red;
+  color: #000080;
+  background-color: #ffffff;
+}
+
+header {
+  text-align: center;
+  white-space: nowrap;
+  border-bottom: 1px solid black;
+}
+
+span {
+  font-size: 2em;
+  color: #00008b;
+  font-weight: bold;
+}
+
+header p {
+  font-weight: bold;
+}
+header p:first-child {
+
+}
+
+header p:nth-child(2) {
+  font-size: .30em;
+}
+
+header p:nth-child(3) {
+  font-size: .60em;
+}
+
+header p:nth-child(4) {
+  font-size: .80em;
+}
+
+a {
+  color: #800080;
+}
+
+a:visited {
+  color: #ff0000;
+}
+
+#left-side {
+  position: relative;
+  float: left;
+  left: 10%;
+}
+
+#right-side {
+  position: relative;
+  float: right;
+  right: 10%;
+}
+
+footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid black;
+}
+
+section li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+li p {
+  font-size: .75em;
+  color: #000000;
+}
+
+footer p:first-child {
+  text-align: center;
+  font-size: .50em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+footer p:nth-child(2) {
+  font-size: .65em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid black;
 }
