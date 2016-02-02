@@ -83,3 +83,43 @@ footer p:nth-child(2) {
   padding-bottom: 10px;
   border-bottom: 1px solid black;
 }
+
+/*
+Q: What is important to know when linking an external file like a
+stylesheet to an HTML file?
+A: You need to specify, first of all, what type of file it is, such as a
+text/css stylesheet.  You also need to make sure that you properly link
+your stylesheet so that it can be properly interpreted by the browser.
+In our case, save the CSS on GitHub and then paste the relative path
+to the CSS in the head of your HTML file.
+
+Q:What tricks did you use to help you with positioning? How hard was it to
+get the site as you wanted it?;
+A: Using the float option in CSS was a great tool to ensure that the two
+main columns of the page were positioned next to each other. Float also
+ensures that the contents are posted within the confines of the webpage.
+However, while styling the page we realized that some of the HTML from
+last week needed to be changed in order to accomodate styling.  I learned
+not to get too fancy with HTML in the process.
+
+Q: What CSS did you use to modify the element style?
+A: We used size to change the font size, color to change the font color,
+ padding to space elements further apart, and borders to simulate the line
+breaks that you would normally code for in the HTML.
+
+Q: Did you modify the HTML to include classes or ids? If so, which did
+you choose and why? If you didn't, how would you know which one to add
+to your HTML?
+A: I actually changed the formatting of my HTML significantly while
+editing the styling.  I found that some of the semantic elements that
+we used had to be changed.  In the case of the floated objects we used
+the ids "ride-side" and "left-side" to specify to which sides the
+different columns should float.
+
+A: Whan you compared your site to the actual code base, which do you
+think had a cleaner code that followed best practices and why?
+Q: Overall, I think ours came pretty close to matching the Berkshire
+Hathaway site.  That being said, there were certain things that they did
+in HTML, such as <br /> and <hr /> that we were told to do in CSS.  This
+affected the formatting slightly and made it look a bit less clean.
+*/
