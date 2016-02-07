@@ -1,5 +1,32 @@
 #Peer Programming 3.4 Chrome DevTools
 
+##Challenge 1
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge1.png">
+
+##Challenge 2
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge2.png">
+
+##Challenge 3
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge3.png">
+
+##Challenge 4
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge4.png">
+
+##Challenge 5
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge5.png">
+
+##Challenge 6
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge6.png">
+
+##Challenge 7
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge7.png">
+
+##Challenge 8
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge8.png">
+
+##Challenge 9
+<img src="https://github.com/dshaps10/phase-0/blob/master/week-3/chrome-devtools/imgs/Release3_challenge9.png">
+
 ##How can you use Chrome's DevTools inspector to help you format or position elements
 
 Chrome's DevTools inspector allows you to make changes to your code and observe those changes in real time.  This makes it incredibly useful when it comes to making incremental changes to your formatting or structure.  For instance, I've found DevTools useful when deciding what type of positioning to use (e.g. static, relative, etc.) when positionin elements because you receive immediately gratification in regards to the look and feel of the changes you are making.
