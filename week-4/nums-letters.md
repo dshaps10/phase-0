@@ -12,14 +12,10 @@ Floats are more precise than integers because they include decimals, while integ
 
 ##Hours in a year
 '''ruby
-require 'redcarpet'
-markdown = 365 * 24
-puts markdown.to_html
+puts 365 * 24
 '''
 
 ##Minutes in a decade
 '''ruby
-require 'redcarpet'
-markdown = (365 * 10) * (24 * 60)
-puts markdown.to_html
+puts (365 * 10) * (24 * 60)
 '''
