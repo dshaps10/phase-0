@@ -12,12 +12,12 @@ Floats are more precise than integers because they include decimals, while integ
 
 ##Hours in a year
 
-'''
+```ruby
 puts 365 * 24
-'''
+```
 
 ##Minutes in a decade
 
-'''
+```ruby
 puts (365 * 10) * (24 * 60)
-'''
+```ruby
