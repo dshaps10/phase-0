@@ -1,0 +1,49 @@
+header {
+  text-align: center;
+}
+
+h1 {
+    color: #0000cc
+}
+
+a {
+  text-decoration: none;
+}
+
+section {
+  width: 45%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+h2 {
+  text-align: center;
+  color: #6699ff
+}
+
+.column-1 {
+  position: relative;
+  float: left;
+  margin-left: 3%;
+
+}
+
+.column-2 {
+  position: relative;
+  float: right;
+  margin-right: 3%;
+}
+
+#OctoCat {
+  position: relative;
+  margin-left: 50%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid;
+}
