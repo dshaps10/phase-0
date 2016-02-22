@@ -49,4 +49,5 @@ describe Die do
       expect(output.sort).to eq possible_values.sort
     end
   end
+
 end

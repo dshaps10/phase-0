@@ -113,5 +113,4 @@ calculations became much more evident.  I can see how creating classes
 and using instance methods over singleton methods allows the programmer
 to store calculations that will be used oftne in the class so the methods
 do not need to be continuously called.
-
 =end
