@@ -1,23 +1,51 @@
 #Attr Methods
 
-# I worked on this challenge [by myself, with:]
+# I worked on this challenge [by myself]
 
-# I spent [#] hours on this challenge.
+# I spent [1] hours on this challenge.
 
 # Pseudocode
 
-# Input:
-# Output:
+# Input: Name
+# Output: Greeting with name
 # Steps:
+=begin
+
+1. Create Name Data class that grabs name and stores in @name instance
+variable
+2. Create class greeting
+3. initialize class by creating new instance of NameData class
+4. store in @name_data variable and create attr_reader method
+5. create hello instance method that calls get_name instance method on name_data instance variable plus greeting
+6. create new instance of Greeting class called greet
+7. invoke hello method on instance and print output
+
+=end
 
 class NameData
 
-end
+  def get_name
+    @name = "Dan Shapiro"
+  end
 
+end
 
 class Greetings
 
+  attr_reader :name_data
+
+  def initialize
+    @name_data = NameData.new
+  end
+
+  def hello
+    puts "Hello #{name_data.get_name}! How wonderful to see you today."
+  end
+
 end
+
+greet = Greetings.new
+puts greet.hello
 
 
 
