@@ -1,8 +1,8 @@
 # Class Warfare, Validate a Credit Card Number
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge [with: Emily Osowski].
+# I spent [2] hours on this challenge.
 
 # Pseudocode
 
@@ -118,5 +118,6 @@ properly iterate over the data and make the necessary calculations.  We
 also got good practice stringing methods to one another and how you can
 use this technique to do multiple operations on one line and reduce
 the necessary number of intermediate variables.
+
 
 =end
