@@ -76,6 +76,8 @@ board = [[47, 44, 71, 8, 88],
 
 new_game = BingoBoard.new(board)
 
+
+#consider putting the display options within the class itself
 new_game.call
 puts "Random Call: #{new_game.call_column}, #{new_game.call_number}"
 puts "\n"
