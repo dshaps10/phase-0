@@ -21,7 +21,6 @@
   #fill in the outline here
 
 #Initial Solution
-
 class BingoBoard
 
   def initialize(board)
@@ -32,8 +31,8 @@ class BingoBoard
   attr_reader :call_number
 
   def call
-    @call_column = "O"
-    @call_number = 88
+    @call_column = ["B", "I", "N", "G", "O"].sample
+    @call_number = rand(100)
   end
 
 #Consider case statement when refactoring
@@ -63,10 +62,14 @@ class BingoBoard
       end
     end
   end
+
+  def display
+    puts "Random Call: #{@call_column}, #{@call_number}"
+    puts "\n"
+    p "B    I   N   G   O"
+    puts self.check.map { |block| puts block.inspect }
+  end
 end
-
-
-#Refactored Solution
 
 board = [[47, 44, 71, 8, 88],
         [22, 69, 75, 65, 73],
@@ -75,11 +78,65 @@ board = [[47, 44, 71, 8, 88],
         [75, 70, 54, 80, 83]]
 
 new_game = BingoBoard.new(board)
-
-
-#consider putting the display options within the class itself
 new_game.call
-puts "Random Call: #{new_game.call_column}, #{new_game.call_number}"
-puts "\n"
-p "B    I   N   G   O"
-puts new_game.check.map { |block| puts block.inspect }
+new_game.check
+new_game.display
+
+#Refactored Solution
+
+class BingoBoard
+
+  def initialize(board)
+    @bingo_board = board
+  end
+
+  attr_reader :call_column
+  attr_reader :call_number
+
+  def call
+    #I put the Letter and number in different variables to make them easier to reference in other instance methods
+    @call_column = ["B", "I", "N", "G", "O"].sample
+    @call_number = rand(100)
+  end
+
+#Case statement will replace the if/then statement used above and provide a cleaner way for the program to scan through a finite list of search possibilities
+  def check
+    call
+    @bingo_board.each do |sub_array|
+    case @call_column
+      when "B"
+        sub_array[0] == @call_number ? sub_array[0] = "X" : false
+      when "I"
+        sub_array[1] == @call_number ? sub_array[1] = "X" : false
+      when "N"
+        sub_array[2] == @call_number ? sub_array[2] = "X" : false
+      when "G"
+        sub_array[3] == @call_number ? sub_array[3] = "X" : false
+      when "O"
+        sub_array[4] == @call_number ? sub_array[4] = "X" : false
+      else
+        puts "Not there!"
+      end
+    end
+  end
+
+#display method will print out a "pretty" board to the console
+
+  def display
+    puts "Random Call: #{@call_column}, #{@call_number}"
+    puts "\n"
+    p "B    I   N   G   O"
+    puts self.check.map { |block| puts block.inspect }
+  end
+end
+
+board = [[47, 44, 71, 8, 88],
+        [22, 69, 75, 65, 73],
+        [83, 85, 97, 89, 57],
+        [25, 31, 96, 68, 51],
+        [75, 70, 54, 80, 83]]
+
+new_game = BingoBoard.new(board)
+new_game.call
+new_game.check
+new_game.display
