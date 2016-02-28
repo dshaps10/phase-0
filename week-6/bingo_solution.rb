@@ -7,19 +7,42 @@
 
 #Create a method to generate a letter (b,i,n,g,o) and a number(1-100)
   #Fill in the outline below
+=begin
+1. Create array with "BINGO" separated into separated strings
+  - call sample method on array
+  - assign to @call_column variable
+2. Take range of numbers 0 to 1-100
+  - call rand method on range
+  - assign random number to @call_number
+=end
 
 #Check the called column for the number called.
   #fill in the outline here
-
+=begin
+1. iterate over entire bingo board
+2. check to see what the random letter is
+  - if it is "B" look at index 0 of each subarray, if "I" look at index 1 etc.
+  - check to see if any subarray values at specified index equal random number
+=end
 #If the number is in the column, replace with an 'x'
   #fill in the outline here
-
+=begin
+1. Check if any number at speficied subarray index equal random number
+  - if so, assign "X" to that index
+  - if not, leave original value
+=end
 #Display a column to the console
   #fill in the outline here
-
+=begin
+1. Print the random number and letter selected
+2. Print BINGO as header for board
+3. Iterate through each sub array and print each index in same column
+=end
 #Display the board to the console(prettily)
   #fill in the outline here
-
+=begin
+1. Iterate through each subarray and print each subarray on separate line with X if necessary
+=end
 #Initial Solution
 class BingoBoard
 
@@ -140,3 +163,58 @@ new_game = BingoBoard.new(board)
 new_game.call
 new_game.check
 new_game.display
+
+#Reflection
+=begin
+
+Q: How difficult ws the pseudocoding for this challenge? What do you think of
+your pseudocoding style?
+A: Pseudocoding for this challenge was particularly, well, challenging.  I
+changed my code and my underlying logic several times whiel writing the actual
+code and, so, I ended up having to retroactively change my pseudocode to reflect
+the changes in the actual code.  Pseudocoding for this challenge has to be a
+bit more vague and leave more room for interpretation.
+
+Q: What are the benefits of using a class for this challenge?
+A: A class allows you to create instance variables for the random number and
+letter that you'll use in this challenge.  This means that those instance
+variables are available to be used in any of the instance methods.  This is
+easier than passing the output of methods to one another outside of classes.
+
+Q: How can you access coordingates in a nested array?
+A: Accessing coordingates in a nested array is similar to a regular array. However,
+to find the nested element you first put the index where the nested array is
+located within the main array and then the index within the nested array of that
+specific value.  So if I want to 3rd element of the 2nd subarray of Array, I would
+write: Array[1][2]
+
+Q: What methods did you use to access and modify the array?
+A: I didn't use any new, crazy methods.  Instead I used a standard .each do
+statement to loop through the major array.  If the value picked at random matched
+any of the cells in the specified column I used basic variable reassignment to
+change the varaible to an "X"
+
+Q: Give an example of a new method you learned while reviewing the ruby docs.
+Based on what you see in the docs, what purpose does it serve, and how is it
+called?
+A: I used the inspect method when displaying the output board to the console.
+Inspect is a handy method that returns a human-readable representation of the
+object to the console.
+
+Q: How did you determine what should be an instance variable vs a local variable?
+A: This was a faily easy process.  If I was creating a varaible and I knew that
+I would have to reference that variable elsewhere in the class then I would
+create an instance variable.  This was especially useful when putting the random
+letters and numbers in to separate varaiables.  In this case, I used instance
+variables because I knew that my check method would need to reference those
+variables.
+
+Q: What do you feel is most improved in your refactored solution?
+A: There were two major changes I made to the structure of my code. First, I
+chose to use a case/swich statement instead of an in/else statement.  Case/switch
+statements are useful when there are a specified and finite number of inputs -
+like "BINGO".  It makes the code easier to read.  I also used a ternary expression
+instead of a neste if/else statement because there was only one true and one
+false condition when checking to see if the number was located on the board.
+
+=end
