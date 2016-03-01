@@ -121,4 +121,33 @@ A: A dot is used to access a property value and must directly pertain to a valid
 variable.  Unlike dot, you can use brackets to search for the value of a variable or
 for the value itself because brackets allow for the usage of strings.
 
+Q:  What is a JavaScript object with a name and value property similar to Ruby?
+A: the push and pop method in JavaScript works the same as the push and pop
+methods in Ruby.  Push pushes a certain value - as the name would suggest - to the
+end of the collection while pop removes that value.
+
+REFLECTION
+
+Q: What are the biggest similarities  and differences between JavaScript and Ruby?
+A: JavaScript operates in much of the same way as Ruby when it comes to loops
+and control flow.  This makes it easy to switch between the languages because
+of the same type of imperative programming. There are some differences though.
+JavaScript is a bit closer to C and C++ in that it uses similar bracket notation,
+employs the use of semicolons and is a bit more verbose than Ruby.  This means
+that there are less built in methods than Ruby, especially when it comes to Array
+and Enumerable methods.
+
+Q: Was some of your Ruby knowledge solidified by learning another language? If
+so, which concepts?
+A: The concept of control flow is a common paradigm in procedural programming
+and is one of the similarities between Ruby and JavaScript.  This made it easy to
+understand the structure of a JavaScript program even though there were some
+major differences.
+
+Q: How do you feel about diving into JavaScript after reading these chapters?
+A: Truthfully I'm feeling fairly confident.  I think that Ruby is a more pleasurable
+and easy language to work with, but JavaScript makes a lot of sense after learning
+a bit of Ruby first and reading up on these documents.  I think it'll be helpful to
+take what I've learned in Ruby and find the counterpart of that in JavaScript.
+
 */
