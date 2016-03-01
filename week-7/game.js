@@ -24,20 +24,21 @@ var clipperCard = {
 var player = {
   money: 60,
   stamina: 100,
-  hunger: 0,
+  patience: 100,
   clipperCard: clipperCard
 }
 
 function bart() {
 }
 
+//depletes money or uber ride based on how far you want to ride
 function uber() {
   var choice = prompt("do you want to go partway or all the way? (choose: part/all)");
   if(choice === "part") {
     return(player.money -= 30);
   }
   else if (choice === "all") {
-      return(player.money -= 0);
+      return(player.money -= 60);
       console.log("You lose!");
   }
    else {
@@ -46,8 +47,20 @@ function uber() {
   }
 }
 
-function charityWorker() {}
+//This function relays the status of the player
+function status() {
+  window.alert("You now have " + player.money + " dollars left, " + player.stamina + " stamina, " + "and " + player.patience + " patience." );
+}
 
+//This function will check the status and end the program if a property is depleted
+function endProgram() {
+  if(player.money === 0 | player.stamina === 0 | player.patience === 0) {
+    window.alert("Sorry you lost!");
+    throw ("Sorry you lost!");
+  }
+}
+
+//Main code
 console.log("It's a Sunday morning in the Bay Area");
 console.log("You wake up, your stomach rumbling.");
 console.log("You think, 'today, I shall go to the foodtrucks in Golden Gate Park!'");
@@ -75,7 +88,20 @@ if(first === "bart") {
   uber();
 }
 
-console.log(player.money);
+//Incremental check on status of player
+status();
+endProgram();
+
+if(first === "bart") {
+  console.log("You hopped on BART and rode across the Bay into San Francisco.  Unfortunately, Bart only takes you as far as downtown");
+  console.log("You'll have to get a little crafy in order to get across the city and to those delicious food trucks");
+}
+else if (first === "uber") {
+  window.alert("In order to save some money, you only rode Uber to downtown.");
+  window.alert("You now have half your money left but plenty of stamina and patience. Riding Uber across the city is too expensive so you'll have to either brave MUNI or walk or a combination of the two.  Good luck!");
+}
+
+
 
 // Refactored Code
 
