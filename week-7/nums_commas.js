@@ -73,4 +73,33 @@ separateComma(integer);
 
 
 
-// Reflection/* 7.5 Separate Comma
+// Reflection
+/*
+Q: What was it like to approach the problem from the perspective of JavaScript? Did
+you approach the problem differently?
+A: Despite using a different language this time around, we took the same approach
+as we did when completing this challenge in Ruby.  Even though JavaScript has
+different methods than Ruby it still has comparable functionality, allowing us to
+not have to use too many work arounds.  The only real difference was the lack of
+array iterator methods.
+
+Q: What did you learn about iterating over arrays in JavaScript?
+A: Unlike Ruby, JavaScript doesn't allow for array iterator methods.  Because of
+this, we were required to use more conventional for loops.  When using a for loop,
+you specify parameters and data structure name much like you would in an array
+iterator except for the lack of a .each method.
+
+Q: What was different about solving this problem in JavaScript?
+A: The use of the for loop actually made solving this problem easier in JavaScript.
+In Ruby, I felt compelled to stick to the array iterators that are built in to the
+language, requiring me to create separate variables for counter.  When using
+a for loop in JavaScript, however, I was able to build that alll into the condition,
+thus saving space, and making the code more readable.
+
+Q: What built-in methods did you find to incorporate in your refactored solution?
+A: The four methods that we used were toString(), split(), reverse() and join().
+toString()takes an integer as input and converts it to a string; split() takes a
+string and splits it into separate array elements; reverse() literally reverses the
+order of array elements; and join() creates one, cohesive string from all the
+elements of an array.
+*/
