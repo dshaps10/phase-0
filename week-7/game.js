@@ -6,17 +6,7 @@
 // Overall mission: You are trying to get from the East Bay to the food trucks in Golden Gate park.  There will be obstacles like unreliable public transportation, earthquakes, and other barriers to you achieving your goal
 // Goals: Get to those food trucks!
 // Characters: One character, living in the East Bay
-// Objects: BART card, BART train, earthquakes, MUNI Bus, tandem bicycles, cell phone
-// Functions:
-
-// Pseudocode
-//
-//
-//
-//
-//
-
-// Initial Code
+// Objects:
 //Object that keeps track of the health of the MUNI bus
 var bus = {
   health: 100
@@ -29,7 +19,7 @@ var player = {
   patience: 100
 }
 
-//depletes money, stamina, and patience for BART ride
+// Functions:
 function bart() {
   player.money -= 10
   player.patience -= 30
@@ -121,14 +111,25 @@ function endProgram() {
     throw ("Sorry you lost!");
   }
 }
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-
-
+// Pseudocode
+/*
+1. Set the scene
+2. Give the player instructions on how to proceed
+3. Give option for BART or uber
+4. deduct required amount from each
+  - If uber, ask if they want to travel half way or all the way
+  - if all the way, end the game because of lost money
+5. Ask player how to proceed: walk, muni, or uber
+  - If walk ask if they want to walk to muni station, halfway, or all the way
+    - If all the way, deplete all the stamina and end the game
+  - If muni ask if they want to go halfway or part way
+    - if part way deplete money and patience
+    - If all the way, muni breaks down
+6. Player has one more leg of traveling
+  - Give option to walk to take uber
+  - Evaluate if enough money is left to afford breakfast
+7. End game with success message
+*/
 //Main code
 window.alert("It's a Sunday morning in the Bay Area. You wake up, your stomach rumbling. You think, 'today, I shall go to the foodtrucks in Golden Gate Park!'");
 
@@ -217,11 +218,34 @@ window.alert("Stay tuned for the sequel where we try to get you back to your hou
 
 
 // Reflection
-//
-//
-//
-//
-//
-//
-//
-//
+/*
+Q: What was the most difficult part of the this challenge?
+A: The hardest part was ensuring that there was a method for the player to succeed.
+This meant that I had to ensure that when the functions that depleted player
+stamina, patience and money were run, they wouldn't cause the player to lose
+despite the choices they made.
+
+Q: What did you learn about creating objects and functions that interact with one
+another?
+A: I learned how you can call functions on the propery of an object and change its
+value.  I used functions that would change the value of the player's attributes
+by lowering the numeric values based on the player choices.  I also created
+functions that would check the status of the player by reading back the object
+properties and ending the program if the properties did not satisfy a specified
+value.
+
+Q: Did you learn about any new build-in methods you could use in your refactored
+solution? If so, what were they and how do they work?
+A: I learned about the toLowerCase(); and the throw method.  The toLowerCase();
+method is useful when asking for user input. It helps safeguard against users
+not using proper capitalization when inputting values. The throw method is
+really useful for creating custom errors that can end your program. It's similar to
+the raise method when creating errors in ruby.
+
+Q: How can you access and manipulate properties of object?
+A: You can access properties of an object similarly to accessing array values.
+You type the name of the object with the property in brackets. This allows you
+to access the properties.  You can manipulate properties by typing the object
+followed by a period and the property name.  You can then use the assignment
+operator to assign a new value to it.
+*/
