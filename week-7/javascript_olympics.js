@@ -1,8 +1,8 @@
 // JavaScript Olympics
 
-// I paired [by myself, with:] on this challenge.
+// I paired [with: Erica LLoyd] on this challenge.
 
-// This challenge took me [#] hours.
+// This challenge took me [2] hours.
 
 
 // Warm Up
@@ -18,17 +18,17 @@ var athletes = [
 ];
 
 function addWin(athletesArray){
+ for (var i = 0; i < athletesArray.length; i ++){
+        var object = athletesArray[i];
 
-  for (var i = 0; i < athletesArray.length; i ++){
-    var object = athletesArray[i];
-    object["win"] = function(object) {
-    }
-    console.log(object.name + " has won " + object.event);
-  }
+        object.win = function() {
+           console.log(object.name + " has won " + object.event);
+        };
+      //object.win();
 }
-
-addWin(athletes);
-console.log(athletes);
+return athletesArray;
+}
+console.log(addWin(athletes));
 
 // Jumble your words
 
