@@ -86,3 +86,29 @@ console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps
 
 
 // Reflection
+/*
+Q: What JavaScript knowledge did you solifiy in this challenge?
+A: This challenge gave me much more practice with iterating over data structures
+in JavaScript.   I got much more practice using for and for/each loops to iterate
+over arrays and objects and manipulate the values insie. This challenge also forced
+me to be more diligent about explicitly returning values.  JavaScript, unlike Ruby,
+doesn't have implicit return so this is something I'll have to keep in mind going
+forward. I also learned more about anonymous functions and when you would
+use them.
+
+Q: What are constructor functions:
+A: Constructor functions are used to create objects much like a class constructor
+is used in Ruby to create instances of Ruby classes for initialization.  With a
+contstructor function, much like Ruby's initialize method, you can can specify
+the properties of an object and properly pass in arguments.
+
+Q: How are constructors different from Ruby classes (in your research)?
+A: Object constructors are on a much smaller scale than Ruby classes.  An object
+constructor is used to define how objects of a certain class should be created
+by entering specific arguments that will be created as properties when the
+object constructor is run.  JavaScript, unlike Ruby, doesn't have classes - it uses
+prototypes instead - because objects in JavaScript directly inherit from other
+objects.  This means that simply using an object constructor of a certain
+prototype will ensure that all instances of that prototype will be created in the
+same fashion.
+*/
