@@ -76,5 +76,5 @@ becomes hard to keep track of the myriad methods available to the programmer.
 Studying Array, Hash and Enumerable methods will help me out greatly in the future.
 I think it's also a good idea to understan the code running underneath these methods
 and doing a bit of JavaScript as been useful in that regard - especially with for and
-while methods
+while methods.
 =end
