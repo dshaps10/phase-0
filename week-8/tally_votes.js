@@ -202,3 +202,22 @@ assert(
   "Ivy should be elected Treasurer.",
   "8. "
 )
+// Reflection
+/*
+Q: What did you learn about iterating over nested objects in JavaScript?
+A: This particular exercise really challenged my knowledge of nested data structures
+and how to access nested values within a JavaScript object.  This challenge introduced
+the concept of nested for loops which you can use to first access an outer data
+structure as well as the collections within it.
+
+Q: Were you able to find useful methods to help you with this?
+A: Using the hasOwnProperty method was extremely useful in this exercise.  This allows
+you to check whether an object has a specified property as a direct property of that object.  It proved to be useful for pulling out the names of the candidates running
+for political office and pushing them to the voteCount object.
+
+Q: What concepts were solidified in the process of working through this challenge?
+A: The concept of using for each loops to loop through  a collection is becoming
+easier and easier with each subsequent exercise. Also, working with nested for loops,
+which I had never before done, showed a useful, albeit roundabout way, in which to
+access values within nested data structures.
+*/
