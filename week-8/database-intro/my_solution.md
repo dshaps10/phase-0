@@ -1,5 +1,47 @@
 #Database Schema
 
+## Select all data for states
+
+SELECT * from states;
+
+## Select all data for all regions
+
+SELECT * FROM regions;
+
+## Select the state_name and population for all states.
+
+SELECT state_name, population FROM states;
+
+## Select the state_name and population for all states ordered by population. The state with the highest population should be at the top.
+
+SELECT state_name, population FROM states ORDERED BY population DESC;
+
+## Select the state_name for the states in region 7.
+
+SELECT state_name FROM states JOIN regions ON (states.region_id = region.id) WHERE region_name=7;
+
+## Select the state_name and population_density for states with a population density over 50 ordered from least to most dense.
+
+SELECT state_name, population_density FROM states WHERE population_density > 50 ORDER BY population_density;
+
+## Select the state_name for states with a population between 1 million and 1.5 million people.
+
+SELECT  state_name FROM states WHERE population > 1000000 AND population < 1500000;
+
+## Select the state_name and region_id for states ordered by region in ascending order.
+
+SELECT state_name, region_id FROM states ORDER BY region_id;
+
+## Select the region_name for the regions with "Central" in the name.
+
+SELECT region_name FROM regions WHERE region_name like "%Central%"
+
+## Select the region_name and the state_name for all states and regions in ascending order by region_id. Refer to the region by name. (This will involve joining the tables).
+
+SELECT region_name, state_name FROM states JOIN region ON (states.region_id = region.id) ORDER BY region_id;
+
+
+
 <img src="https://github.com/dshaps10/phase-0/blob/master/week-8/database-intro/Screen%20Shot%202016-03-07%20at%208.28.26%20AM.png">
 
 ##Reflection
