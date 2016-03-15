@@ -9,7 +9,7 @@
 
 
 # 3. Initial Solution
-Class car
+class Car
 
     def initialize(model, color)
         @model = model
@@ -24,8 +24,6 @@ Class car
         @speed
     end
 
-
-
 end
 
 
@@ -38,7 +36,9 @@ end
 
 
 # 1. DRIVER TESTS GO BELOW THIS LINE
-
+corvette = Car.new("corvette", "red")
+corvette.distance = 15
+corvette.speed
 
 
 
