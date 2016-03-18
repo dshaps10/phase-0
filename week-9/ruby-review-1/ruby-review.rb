@@ -2,7 +2,7 @@
 
 
 # I worked on this challenge [with: Emmett Garber].
-# This challenge took me [#] hours.
+# This challenge took me [2] hours.
 
 
 # Pseudocode
@@ -63,3 +63,23 @@ num.numberWords
 
 
 # Reflection
+=begin
+Q: What concepts did you review in this challenge?
+A: We took a dive into hashes, working with nested data structures, and classes.
+We also go some good experience working with various array methods and data
+structure manipulation.
+
+Q: What is still confusing to you about Ruby?
+A: Ruby is starting to make more and more sense with each passing week.  One of
+the concepts I'm still working with is nesting array methods within array methods
+to access nested data structures. On the other hand, array manipulation is
+becoming extremely clear and I would like to port that knowledge over to
+JavaScript.
+
+Q: What are you going to study to get more prepared for Phase 1?
+A: At this point, I'm mostly concerned with getting more experience with object
+oriented concepts such as classes, objects, and inheritence.  Considering that
+Ruby is one of the more object oriented language and since OOP is a standard in
+today's programming world, I think that these are concepts that will have to
+make perfect sense to me if I want to succeed.
+=end
